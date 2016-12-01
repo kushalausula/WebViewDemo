@@ -15,10 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         wvTest = (WebView) findViewById(R.id.wvTest);
-
 
         loadWebSite("http://www.twitter.com");
 
