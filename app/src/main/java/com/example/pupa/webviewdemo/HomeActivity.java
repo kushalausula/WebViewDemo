@@ -36,6 +36,9 @@ public class HomeActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+
+        loadWebSite("http://www.hotstar.com/");
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -97,9 +100,9 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            loadWebSite("http://www.google.com");
+            loadWebSite("http://www.hotstar.com/tv");
         } else if (id == R.id.nav_gallery) {
-            loadWebSite("http://www.yahoo.com");
+            loadWebSite("http://www.hotstar.com/movies");
         } else if (id == R.id.nav_slideshow) {
             loadWebSite("http://www.msn.com");
         } else if (id == R.id.nav_manage) {
